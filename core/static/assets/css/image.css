@@ -1,0 +1,75 @@
+ul {
+  position:relative;
+   overflow: auto;
+   width:100%;         /* por default, os blocos são 100%, mas vamos garantir isso.           */
+  height:100%;
+}
+
+li {
+  display:block;
+  float: left;
+list-style-type: none;
+  width: 15%;
+  height: 25%;
+}
+
+ul li input[type="checkbox"][id^="cb"] {
+  display: none;
+}
+
+ul li label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li label::before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+ul li label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+ul li :checked+label {
+  border-color: #ddd;
+}
+
+ul li :checked+label::before {
+  content: "✓";
+  font-size: 20px;
+  background-color: grey;
+  transform: scale(1);
+}
+
+ul li :checked+label img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}

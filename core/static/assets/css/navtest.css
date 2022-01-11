@@ -1,0 +1,21 @@
+body {
+  background-color: #001;
+}
+.navbar.scrolling-navbar.top-nav-collapse {
+  background-color: #fff !important;
+}
+.navbar.navbar-dark.scrolling-navbar.top-nav-collapse .navbar-nav .nav-item .nav-link {
+  color: red;
+}
+.navbar.navbar-dark.scrolling-navbar.top-nav-collapse .navbar-brand {
+  color: green;
+}
+.navbar.navbar-dark.scrolling-navbar.top-nav-collapse form .md-form .form-control {
+  color: #000;
+}
+.navbar.navbar-dark.scrolling-navbar.top-nav-collapse form .md-form .form-control::placeholder {
+  color: #000;
+}
+.navbar.navbar-dark.scrolling-navbar.top-nav-collapse form .md-form input {
+    border-bottom: 1px solid #000;
+}
