@@ -30,7 +30,6 @@ mysqlclient==2.0.3
 pagseguro==0.3.4
 parso==0.8.2
 pathspec==0.9.0
-paypal @ file:///C:/Users/dreza/AppData/Local/Temp/paypal-1.2.5-py2.py3-none-any.whl
 Pillow==8.3.1
 platformdirs==2.4.0
 protobuf==3.17.3
